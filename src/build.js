@@ -38,11 +38,6 @@ fs.readFile(process.argv[2], 'utf8', (err, data) => {
 	// effectively removing the style attr
 	data = data.replace(htmlRegExp, htmlTag);
 
-//	let prettyName = process.argv[2].split('.')[0] + '.pretty.html';
-//
-//	// Write pretty file
-//	fs.writeFile(prettyName, data, () => console.log('Pretty file ready'));
-
 	// Minify
 	const minified = minify(data, {
 		removeComments: true,
