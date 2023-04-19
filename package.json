@@ -1,0 +1,26 @@
+{
+  "name": "boletin-builder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rodrigo Alvarez <contacto@rodrigoalvarez.co.uk>",
+  "license": "ISC",
+  "bin": {
+    "boletin-builder": "./cli.js"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "dependencies": {
+    "he": "^1.2.0",
+    "html-minifier": "^4.0.0",
+    "juice": "^9.0.0"
+  },
+  "files": [
+    "src/*.js",
+    "./cli.js"
+  ]
+}
